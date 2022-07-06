@@ -68,11 +68,6 @@
   margin-left: 10px;
 }
 
-a:visited {
-  color: #ececec;
-  text-decoration: none;
-}
-
 .scroll-wrapper {
   margin-top: 60px;
   display: flex;
@@ -124,4 +119,19 @@ a:visited {
 .project-grid-wrapper .grid-text .BS {
   text-align: center;
   align-items: center;
+}
+
+a:visited {
+  color: #ececec;
+  text-decoration: none;
+}
+
+a:link {
+  color: #ececec;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ececec;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
