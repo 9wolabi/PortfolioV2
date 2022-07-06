@@ -1,0 +1,157 @@
+@import url(./reset.css);
+@import url(./style.css);
+
+// body{
+//   background-color: black;
+// }
+
+.main-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+
+.nav-container{
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 21px 0px;
+  padding-left: 300px;
+  padding-right: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  a{
+    text-decoration: none;
+  }
+}
+
+.nav-home{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-menu-wrapper{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: auto;
+  .nav-menu{
+  margin-left: 57px;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  }
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.main-title{
+  padding: 0px 300px;
+  margin-top: 70px;
+}
+
+#emotion{
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 128px;
+}
+
+.aboutme-wrapper{
+  margin-left: 590px;
+  a{
+    color: #ececec;
+  }
+  img{
+    width: 38px;
+    margin-left: 10px;
+  }
+}
+
+a:visited{
+  color: #ececec;
+  text-decoration: none;
+}
+
+.scroll-wrapper{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 38px;
+  }
+}
+
+.project-wrapper{
+  padding: 50px 200px;
+  background-color: #ececec;
+  height: 650px;
+  // .f-row-container{
+  //   display: flex;
+  //   flex-direction: row;
+  //   .f-row{
+  //     background-color: #848484;
+  //     width: 648px;
+  //     height: 948px;
+  //   }
+  //   .f-col-container{
+  //     display: flex;
+  //     flex-direction: column;
+  //     .f-col{
+  //       width: 648px;
+  //       height: 411px;
+  //       background-color: #848484;
+  //     }
+  //   }
+  // }
+}
+
+.project-grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 100px;
+  column-gap: 20px;
+  row-gap: 10px;
+    .click-area{
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+    }
+    .grid-item{
+      background-color: black;
+    }
+    .preview-sequence{
+      background-image: url(../assets/preview/sequence.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .preview-VCS{
+      background-image: url(../assets/preview/VCS.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .grid-text{
+      h4{
+        color: black;
+      }
+      .BS{
+        text-align: center;
+        align-items: center;
+      }
+    }
+}
+
+
+// sequence
+
+
