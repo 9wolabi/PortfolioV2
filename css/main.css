@@ -1,44 +1,10 @@
-@import url(./reset.css);
-@import url(./style.css);
+@import url(reset.css);
+@import url(index_style.css);
+@import url(nav.css);
 .main-wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: black;
-}
-
-.nav-container {
-  display: flex;
-  font-size: 16px;
-  font-weight: 300;
-  padding: 21px 0px;
-  padding-left: 300px;
-  padding-right: 300px;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-}
-.nav-container a {
-  text-decoration: none;
-}
-
-.nav-home {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-}
-
-.nav-menu-wrapper {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  margin-left: auto;
-}
-.nav-menu-wrapper .nav-menu {
-  margin-left: 57px;
-}
-.nav-menu-wrapper .nav-menu a {
-  color: white;
-  text-decoration: none;
+  background-color: #181818;
 }
 
 .inline-block {
@@ -76,22 +42,27 @@
   align-items: center;
 }
 .scroll-wrapper img {
+  margin-top: 20px;
   width: 38px;
 }
 
 .project-wrapper {
   padding: 50px 200px;
-  background-color: #ececec;
-  height: 650px;
+  background-color: #181818;
+}
+.project-wrapper .title {
+  color: white;
+  margin-bottom: 100px;
 }
 
 .project-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 100px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 500px 50px 30px 500px 50px 30px;
+  border-radius: 12px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 20px;
 }
 .project-grid-wrapper .click-area {
   width: 100%;
@@ -113,12 +84,33 @@
   background-size: cover;
   background-position: center;
 }
-.project-grid-wrapper .grid-text h4 {
-  color: black;
+.project-grid-wrapper .preview-BS {
+  grid-row: 4/5;
+  background-image: url(../assets/preview/berry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.project-grid-wrapper .grid-text .BS {
-  text-align: center;
-  align-items: center;
+.project-grid-wrapper .seq-title {
+  grid-row: 2/3;
+}
+.project-grid-wrapper .vcs-title {
+  grid-row: 2/3;
+}
+.project-grid-wrapper .bs-title {
+  grid-row: 5/6;
+}
+.project-grid-wrapper .seq-category {
+  grid-row: 3/4;
+}
+.project-grid-wrapper .vcs-category {
+  grid-row: 3/4;
+}
+.project-grid-wrapper .bs-category {
+  grid-row: 6/7;
+}
+.project-grid-wrapper .grid-text h4 {
+  color: white;
 }
 
 a:visited {

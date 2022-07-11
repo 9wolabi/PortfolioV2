@@ -12,3 +12,13 @@ body{
 div{
   box-sizing: border-box;
 }
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,40 @@
+.nav-container {
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 21px 0px;
+  padding-left: 300px;
+  padding-right: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+.nav-container a {
+  text-decoration: none;
+}
+
+.nav-home {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;b
+}
+
+.nav-menu-wrapper {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: auto;
+}
+.nav-menu-wrapper .nav-menu {
+  margin-left: 57px;
+}
+.nav-menu-wrapper .nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+}
+
+

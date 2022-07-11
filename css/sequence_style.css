@@ -1,0 +1,81 @@
+
+
+.title{
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 72px;
+letter-spacing: -0.02em;
+}
+
+.subtitle{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: -0.02em;
+}
+
+.subtitle-2{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 43px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+}
+
+.paragraph{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+}
+
+.paragraph-bold{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -0.02em;
+}
+
+.subtitle-3{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: -0.02em;
+}
+
+.caption{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+}
+
+.color-type{
+  font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+}
