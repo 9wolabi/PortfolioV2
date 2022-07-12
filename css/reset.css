@@ -8,6 +8,13 @@ body{
   margin-bottom: 0px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   background-color: #ececec;
+  -ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+출처: https://wooaoe.tistory.com/49 [개발개발 울었다:티스토리]
 }
 div{
   box-sizing: border-box;

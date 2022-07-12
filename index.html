@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
   <link rel="stylesheet" href="./css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link rel="icon" href="./assets/icon/favicon.png" type="image/x-icon" sizes="16x16">
   <title>Yunho Park</title>
 </head>
 <body>
+  
   <!-- 메인페이지-->
   <div class="main-wrapper">
     <header>
@@ -23,23 +26,28 @@
       </nav>
     </header>
     <div class="main-title">
-      <h1>Hi there ! 👋</h1>
-      <h1 class="inline-block" style="margin-right: 100px;">I'm</h1>
-      <h1 class="inline-block" id="emotion" style="margin-right: 100px;">Passionate</h1>
-      <h1>UI/UX Designer</h1>
-      <h1 class="inline-block">Yunho Park</h1>
+      <h1 class="intro">Hi there ! 👋</h1>
+      <h1 class="intro">I'm</h1>
+      <h1 class="intro">
+        <div class="carousel-wrapper" >
+          <div id="emotion">Passionate</div> 
+      </h1>
+      <h1 class="intro">UI/UX Designer</h1>
+      <h1 class="intro">Yunho Park</h1>
+    
 
-      <div class="aboutme-wrapper inline-block" style="right: 0px;">
+      <div class="aboutme-wrapper">
         <a class="inline-block" href="#">About-me</a>
         <img src="./assets/icon/Vector 9.png" alt="">
       </div>
+    </div>
       <a href="#project">
         <div class="scroll-wrapper gray">
           <p>Scroll to Discover</p>
           <img src="./assets/icon/double-arrow-bottom.png" alt="">
         </div>
       </a>
-    </div>
+    
   </div>
   <!-- 프로젝트 -->
   <!-- <div class="project-wrapper" id="project">
@@ -55,40 +63,42 @@
     </div> -->
 
     <div class="project-wrapper" id="project">
-      <p class="title">Projects</p>
-        <div class="project-grid-wrapper">
-          <div class="grid-item preview-sequence">
-            <a href="./html/sequence.html">
-              <div class="click-area"></div>
-            </a>
-          </div>
-          <div class="grid-item preview-VCS">
-            <a href="./html/VCS.html">
-              <div class="click-area"></div>
-            </a>
-          </div>
-          <div class="grid-item preview-BS">>
-            <a href="./html/BS.html">
-              <div class="click-area"></div>
-            </a>
-          </div>
-          <div class="grid-text seq-title">
-            <a href="./html/sequence.html">
-              <h4>Sequence</h4>
-              <h5>Mobile App</h5>
-            </a>
-          </div>
-          <div class="grid-text vcs-title">
-            <a href="./html/VCS.html">
-              <h4>Version Control System</h4>
-              <h5>Windows App</h5>
-            </a>
-          </div>
-          <div class="grid-text bs-title">
-            <a href="./html/BS.html">
-              <h4>BERRYSTORE Redesign</h4>
-              <h5>Mobile App</h5>
-            </a>
+      <div class="project-snap-wrapper">
+        <p class="title">Projects</p>
+          <div class="project-grid-wrapper">
+            <div class="grid-item preview-sequence" data-aos="fade-up">
+              <a href="./html/sequence.html">
+                <div class="click-area"></div>
+              </a>
+            </div>
+            <div class="grid-item preview-VCS" data-aos="fade-up">
+              <a href="./html/VCS.html">
+                <div class="click-area"></div>
+              </a>
+            </div>
+            <div class="grid-item preview-BS" data-aos="fade-up">
+              <a href="./html/BS.html">
+                <div class="click-area"></div>
+              </a>
+            </div>
+            <div class="grid-text seq-title">
+              <a href="./html/sequence.html">
+                <h4>Sequence</h4>
+                <h5>Mobile App</h5>
+              </a>
+            </div>
+            <div class="grid-text vcs-title">
+              <a href="./html/VCS.html">
+                <h4>Version Control System</h4>
+                <h5>Windows App</h5>
+              </a>
+            </div>
+            <div class="grid-text bs-title">
+              <a href="./html/BS.html">
+                <h4>BERRYSTORE Redesign</h4>
+                <h5>Mobile App</h5>
+              </a>
+            </div>
           </div>
         </div>
         </div>
@@ -105,7 +115,24 @@
       document.getElementById("emotion").innerHTML=emotion[++count]
     }, 500);
   </script> -->
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function textSlide() {
+      let textArray = ['a', 'Passionate', 'Meaningful', 'Reasonable', 'Effective'];
+      let index = 0;
+      setInterval(() => {
+      
+      if (index == 4) {
+        index = 0;
+      }
+      index ++
+      document.getElementById('emotion').innerHTML = textArray[index]
+    }, 1000);
+    }
+    textSlide()
+    
+  </script>
   
 </body>
 </html>
