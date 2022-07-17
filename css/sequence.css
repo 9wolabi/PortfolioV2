@@ -110,8 +110,6 @@ div {
 
 .target-banner {
   background-color: #F47214;
-  width: 100%;
-  height: 400px;
   padding: 97px 300px;
 }
 .target-banner .target-banner-wrapper {
@@ -459,6 +457,10 @@ div {
 }
 .profile-wrapper .profile-item-2 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .profile-wrapper .profile-item-3 {
   grid-column: 2/3;

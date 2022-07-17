@@ -134,8 +134,8 @@ div{
 
 .target-banner{
   background-color: $main-color;
-  width: 100%;
-  height: 400px;
+  // width: 100%;
+  // height: 400px;
   padding: 97px 300px;
 
   .target-banner-wrapper{
@@ -490,6 +490,8 @@ div{
     height: 100%;
     img{
       width: 100%;
+      object-fit: cover;
+      object-position: bottom;
     }
     
   }
